@@ -1,0 +1,30 @@
+{
+	"title": "Invalidate left_option",
+	"rules":[
+	{
+		"description": "Invalid left_option for ELECOM keybord",
+		"manipulators": [
+		{
+			"type": "basic",
+			"from": {
+				"key_code": "left_option",
+				"modifiers": {}
+			},
+			"to_if_alone": [
+				{"key_code": "vk_none"}
+			],
+			"conditions": [
+			{
+				"type": "device_if",
+				"identifiers": [{
+					"vendor_id": 1390,
+					"product_id": 4200
+				}
+				]
+			}
+			]
+		}
+		]
+	}
+	]
+}
