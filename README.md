@@ -1,0 +1,1 @@
+# Karabiner_invalidate_key
